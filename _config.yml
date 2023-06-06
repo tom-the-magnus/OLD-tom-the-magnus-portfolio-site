@@ -32,12 +32,12 @@ navigation:
     url: /
   - text: About
     url: /about.html
-  - text: Style Guide
-    url: /style-guide/
+#   - text: Style Guide
+#     url: /style-guide/
   - text: Tags
-    url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+    url: /tags.html
+#   - text: Download
+#     url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
 
 # The shortname for your Disqus site to enable comments.
 disqus: justgoodthemes
