@@ -31,7 +31,7 @@ navigation:
   - text: Home
     url: /
   - text: About
-    url: tom-the-magnus.github.io/about.md
+    url: tom-the-magnus.github.io/about.html
   - text: Style Guide
     url: /style-guide/
   - text: Tags
