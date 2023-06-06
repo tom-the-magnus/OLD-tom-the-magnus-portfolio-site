@@ -12,6 +12,8 @@ Comprehensions are used to transform one list into another list using only a sin
 
 There are list comprehensions and dictionary comprehensions. This document addresses both.
 
+<!--more-->
+
 ## List Comprehensions
 
 The syntax is:
