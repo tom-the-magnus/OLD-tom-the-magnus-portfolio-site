@@ -2,12 +2,12 @@
 layout: post
 title: "Python - map(), filter(), lambda()"
 description: "A basic guide to these built in functions in Python"
-date: 2022-05-01
+date: 2022-05-05
 feature_image: images/world-map.png
 tags: [python]
 ---
 
-In [[Comprehensions]], I mentioned that you could use these functions to perform the same operations that a list comprehension would. So what are these things anyway? Let's find out.
+In [Comprehensions Basics](https://tom-the-magnus.github.io/comprehensions), I mentioned that you could use these functions to perform the same operations that a list comprehension would. So what are these things anyway? Let's find out.
 
 <!--more-->
 
