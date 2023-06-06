@@ -9,10 +9,10 @@
 lang: en-US
 
 # Site title
-title: "Scriptor"
+title: "Tom Magnus"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "Tom is a programmer and a blogger living in New York City."
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
@@ -43,11 +43,11 @@ navigation:
 disqus: justgoodthemes
 
 # Colors
-accent_color: '#2d72d9'
+accent_color: '#FFB81C'
 
 # Site footer
 footer:
-  content: "&copy; Scriptor all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
+  content: "Contact me at [tom.magnus.94@gmail.com](mailto:tom.magnus.94@gmail.com)."
   has_social: true
 
 # Plugins
