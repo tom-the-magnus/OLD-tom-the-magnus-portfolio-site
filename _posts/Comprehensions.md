@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Python - Comprehension Basics"
+description: "An overview of Python comprehensions."
+date: 2023-05-05
+feature_image: images/python_comprehensions.png
+tags: [python]
+---
+
 Comprehensions are used to transform one list into another list using only a single line of code. So if you already have a list and want to produce a new list by performing some operation on every element of the existing list, you use a comprehension.
 
 There are list comprehensions and dictionary comprehensions. This document addresses both.
