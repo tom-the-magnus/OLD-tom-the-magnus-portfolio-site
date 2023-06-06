@@ -3,7 +3,7 @@ layout: post
 title: "Python - Comprehension Basics"
 description: "An overview of Python comprehensions."
 date: 2023-05-05
-feature_image: images/python_comprehensions.png
+feature_image: images/python-lc.png
 author: Tom
 tags: [python]
 ---
