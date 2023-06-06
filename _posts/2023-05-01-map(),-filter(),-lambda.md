@@ -2,7 +2,7 @@
 layout: post
 title: "Python - map(), filter(), lambda()"
 description: "A basic guide to these built in functions in Python"
-date: 2022-0501
+date: 2022-05-01
 feature_image: images/world-map.png
 tags: [python]
 ---
