@@ -12,7 +12,7 @@ lang: en-US
 title: "Tom Magnus"
 
 # A description of your site for meta tag, search engine results.
-description: "Tom is a programmer and technical writer living in New York City."
+description: "Tom is a technical writer and aspiring programmer living in New York City."
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
