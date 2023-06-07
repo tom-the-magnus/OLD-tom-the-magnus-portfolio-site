@@ -12,50 +12,32 @@ Comprehensions are used to transform one list into another list using only a sin
 
 There are list comprehensions and dictionary comprehensions. This document addresses both.
 
-<!--more-->
-
 ## List Comprehensions
 
 The syntax is:
 
 ```
-`new_list = [expression for item in old_list]`
+`new_list = [expression for item in iterable]`
 ```
 
-So, all list comprehensions have these elements:
+So, all list comprehensions have these four elements:
 
 - a new list
-- an expression ( the operation to be preformed on the iterable )
-- a for statement with a variable
-- an iterable ( e.g a list/tuple )
+- an expression 
+- a for statement 
+- an iterable 
 
-And in this case, those specifically are:
-
-- a new list - `new_list` 
-- an expression - `expression` 
-- a for statement with a variable - `for item`
-- an iterable - `old_list` 
-
-Here's an example:
+To see how this would be an implemented, here's an example:
 
 ```
-# An existing list
+# Our iterable, a list of numbers
 numbers = [1, 2, 3, 4, 5] 
 
 # A new list we are going to create with list comprehension
 squares = [num**2 for num in numbers]
 ```
 
-So here we have two lists, `numbers` and `squares`. `numbers` is an existing list of values. `squares` is the list we are going to create using our list comprehension. 
-
-To recap, for any list comprehension, we must have these things:
-
-- a new list
-- an expression
-- a for statement
-- a list to be iterated on
-
-In this example, these thing are:
+In this example, the elements of our comprehension are:
 
 - a new list - `squares`
 - an expression - `num**2`
@@ -68,7 +50,21 @@ If we ran this code, `squares` would be equal to:
 [1,4,9,16,25]
 ```
 
-You can also include conditional statements on the end of a comprehension to exclude certain values from the final list. For example, say we wanted a list of squares, but only if they were even. We could write: 
+If it's your first time seeing a comprehension, the syntax may be a bit confusing. To put it into plain English, think of:
+
+```
+squares = [num**2 for num in numbers]
+```
+
+as:
+
+	Squares is equal to each element to the power of two in the iterable called 'numbers'
+
+So the logic here is that each element in `numbers` gets squared and those numbers are added to `squares`. `1` in `numbers` stays `1`, `2` becomes `4`, and `3` becomes `9`.
+
+## Comprehension Conditionals
+
+You can include conditional statements on the end of a comprehension to exclude certain values from the final list. For example, say we wanted a list of squares, but only if they were even. We could write: 
 
 ```
 # An existing list
@@ -78,7 +74,7 @@ numbers = [1, 2, 3, 4, 5]
 squares = [num**2 for num in numbers if num % 2 ==0] 
 ```
 
-Since we've added that `if num % 2 ==0 ` at the end, we'll only get even outputs. So the final list produced would be:
+Since we've added that `if num % 2 == 0 ` at the end, we'll only get even outputs. So the final list produced would be:
 
 ```
 [4,16]
@@ -86,9 +82,9 @@ Since we've added that `if num % 2 ==0 ` at the end, we'll only get even outputs
 
 ## Dictionary Comprehensions
 
-First, if you can wrap your head around list comprehensions, dictionary comprehensions are syntactically and logically very similar. There are a few important differences which are worth understanding though. 
+If you can wrap your head around list comprehensions, dictionary comprehensions are syntactically and logically very similar.
 
-Before we discuss these, let's discuss some built-in methods to transforms dictionaries, as you'll really always have to do this before putting a dictionary through a comprehension.
+Actually thought, before we talk about dictionary comprehensions, let's discuss some built-in methods to transform dictionaries into a set of lists, as this is many times the more simple way to comprehend a dictionary.
 
 First, you can use these built-in methods to generate a list of the values or keys in a dictionary.
 
@@ -119,13 +115,13 @@ dict_items = ([('c', 3), ('d', 4), ('a', 1), ('b', 2)])
 
 What does this mean? **It means that very often you can work around making a dictionary comprehension by converting the dictionary values to a list.**
 
-That said, there are going to be times when that is not possible and you will have to write a comprehension for an object of the dictionary type. Good news, though - you'll probably be able to understand the syntax for a dictionary comprehension pretty easily:
+That said, there are going to be times when that is not possible and you will have to write a comprehension for the dictionary itself. The syntax to overall pretty similar:
 
 ```
 dict_variable = {key:value for (key,value) in dictonary.items()}
 ```
 
-You can add a condition by doing something like:
+and you can add a condition by doing something like:
 
 ```
 dict_list = {key:value for (key,value) in dict_items if value < 5000}
@@ -134,7 +130,7 @@ dict_list = {key:value for (key,value) in dict_items if value < 5000}
 
 ## Alternative Methods
 
-There are other ways to achieve this same outcome, though. For example, with list comprehensions, we could just use a for-loop like this:
+But what if you cannot use a comprehension for some reason? There are other ways to produce a new list based on some iterable. For example, instead of using a comprehension, we could just use a for loop like this:
 
 ```
 numbers = [1,2,3,4,5]  
@@ -153,11 +149,11 @@ squares = list(map(lambda num: num**2, numbers))
 even_numbers = list(filter(lambda num: num % 2 == 0, numbers)) 
 ```
 
-To read more about that, review the [[map(), filter(), lambda]] article.
+If you're unfamiliar with `map`, `filter`, or `lambda`, you can read about these in my [[map(),  filter(), lambda]] article.
 
 So, there's a bunch of different ways we could do this same task. What are the unique advantages of comprehension, then? 
 
-**We use comprehension because it many times provides the most legible and least line-intensive solutions for transforming an iterable.**  If you need to produce a new iterable based on an existing iterable using a basic operation or conditional, comprehension is a highly legible, low-line method for this. 
+Really, comprehensions are many times just the least line intensive and most legible method to perform an operation on an iterable. If you can use a comprehension, you probably should.
 
 Well done, that's it! If you want to check out some related tutorials, I've linked them below. 
 
