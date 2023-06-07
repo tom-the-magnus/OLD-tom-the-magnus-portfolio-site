@@ -58,7 +58,7 @@ squares = [num**2 for num in numbers]
 
 as:
 
-	Squares is equal to each element to the power of two in the iterable called 'numbers'
+>"Squares is equal to each element to the power of two in the iterable called 'numbers'"
 
 So the logic here is that each element in `numbers` gets squared and those numbers are added to `squares`. `1` in `numbers` stays `1`, `2` becomes `4`, and `3` becomes `9`.
 
