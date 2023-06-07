@@ -10,6 +10,8 @@ tags: [python]
 
 Comprehensions are used to transform one list into another list using only a single line of code. So if you already have a list and want to produce a new list by performing some operation on every element of the existing list, you use a comprehension.
 
+<!--more-->
+
 There are list comprehensions and dictionary comprehensions. This document addresses both.
 
 ## List Comprehensions
