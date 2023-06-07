@@ -12,11 +12,11 @@ Comprehensions are used to transform one list into another list using only a sin
 
 <!--more-->
 
-There are list comprehensions and dictionary comprehensions. This document addresses both.
+There are list comprehensions and dictionary comprehensions. We'll start with list comprehensions.
 
 ## List Comprehensions
 
-The syntax is:
+The syntax for this is:
 
 ```
 `new_list = [expression for item in iterable]`
@@ -24,10 +24,10 @@ The syntax is:
 
 So, all list comprehensions have these four elements:
 
-- a new list
-- an expression 
-- a for statement 
-- an iterable 
+- a new list - `new_list` 
+- an expression  - `expression`
+- a for statement  - `for item`
+- an iterable  - `in iterable`
 
 To see how this would be an implemented, here's an example:
 
@@ -44,7 +44,7 @@ In this example, the elements of our comprehension are:
 - a new list - `squares`
 - an expression - `num**2`
 - a for statement - `for num`
-- a list to be iterated on - `numbers`
+- a list to be iterated on - `in numbers`
 
 If we ran this code, `squares` would be equal to: 
 
@@ -60,13 +60,13 @@ squares = [num**2 for num in numbers]
 
 as:
 
->"Squares is equal to each element to the power of two in the iterable called 'numbers'"
+	Squares is equal to each element to the power of two in the iterable called 'numbers'
 
 So the logic here is that each element in `numbers` gets squared and those numbers are added to `squares`. `1` in `numbers` stays `1`, `2` becomes `4`, and `3` becomes `9`.
 
 ## Comprehension Conditionals
 
-You can include conditional statements on the end of a comprehension to exclude certain values from the final list. For example, say we wanted a list of squares, but only if they were even. We could write: 
+You can include conditional statements on the end of a comprehension to exclude certain values from the final list. Say we wanted a list of numbers to the power of two, but only if they were even. We could write: 
 
 ```
 # An existing list
@@ -86,7 +86,7 @@ Since we've added that `if num % 2 == 0 ` at the end, we'll only get even output
 
 If you can wrap your head around list comprehensions, dictionary comprehensions are syntactically and logically very similar.
 
-Actually thought, before we talk about dictionary comprehensions, let's discuss some built-in methods to transform dictionaries into a set of lists, as this is many times the more simple way to comprehend a dictionary.
+That said, before we talk about dictionary comprehensions, let's discuss some built-in methods to transform dictionaries into lists, as this is many times the most simple way to comprehend a dictionary.
 
 First, you can use these built-in methods to generate a list of the values or keys in a dictionary.
 
@@ -96,7 +96,7 @@ key_list = dict1.keys()
 val_list = dict1.val()
 ```
 
-Pretty simple - it just takes all the keys or values and puts them into a list, so they'd look like:
+Pretty simple - these just take all the keys or values and puts them into a list. The final product is:
 
 ```
 key_list = [a,b,c,d]
@@ -117,7 +117,7 @@ dict_items = ([('c', 3), ('d', 4), ('a', 1), ('b', 2)])
 
 What does this mean? **It means that very often you can work around making a dictionary comprehension by converting the dictionary values to a list.**
 
-That said, there are going to be times when that is not possible and you will have to write a comprehension for the dictionary itself. The syntax to overall pretty similar:
+Still, there are going to be times when that is not possible and you will have to write a comprehension for the dictionary itself. The syntax for this pretty similar to list comprehensions:
 
 ```
 dict_variable = {key:value for (key,value) in dictonary.items()}
@@ -129,14 +129,13 @@ and you can add a condition by doing something like:
 dict_list = {key:value for (key,value) in dict_items if value < 5000}
 ```
 
-
 ## Alternative Methods
 
-But what if you cannot use a comprehension for some reason? There are other ways to produce a new list based on some iterable. For example, instead of using a comprehension, we could just use a for loop like this:
+But what if you cannot use a comprehension at all? There are some other ways to produce a new iterable with an existing iterable. For example, instead of using a comprehension, we could just use a for loop like this:
 
 ```
 numbers = [1,2,3,4,5]  
-squares =[]  
+squares = []  
   
 for num in numbers:  
 	if num % 2 == 0:  
@@ -153,11 +152,8 @@ even_numbers = list(filter(lambda num: num % 2 == 0, numbers))
 
 If you're unfamiliar with `map`, `filter`, or `lambda`, you can read about these in my [[map(),  filter(), lambda]] article.
 
-So, there's a bunch of different ways we could do this same task. What are the unique advantages of comprehension, then? 
-
-Really, comprehensions are many times just the least line intensive and most legible method to perform an operation on an iterable. If you can use a comprehension, you probably should.
+So why use comprehensions, then? While these are all great methods to get the job done, **comprehensions are often the most concise and legible method to create a new iterable**.
 
 Well done, that's it! If you want to check out some related tutorials, I've linked them below. 
 
 - [[map(), filter(), lambda]]
-
