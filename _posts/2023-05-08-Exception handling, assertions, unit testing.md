@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Debugging 101: Exception handling, assertions, unit testing"
+description: "Learn how to detect errors and squash bugs in Python"
+date: 2023-05-08
+feature_image: images/python_bugs.jpg
+tags: [pythong, debugging]
+---
+
 When you're writing a program in Python, it's good to test each part of your program as you build it so that you can detect **errors** and **limitations** with your code early on.
 
 To do this, programmers write **unit tests**. These allow you to spot errors and limitations in your code, understand their root causes, and fix up your code as your building it. 
