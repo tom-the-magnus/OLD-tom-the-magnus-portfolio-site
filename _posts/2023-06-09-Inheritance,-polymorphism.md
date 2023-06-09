@@ -1,10 +1,19 @@
-Sure, here's the revised version of the blog post:
+---
+layout: post
+title: "Python: Inheritance"
+description: "Article on inheritance"
+date: 2023-06-09
+feature_image: images/python-symbol.png
+tags: [python, python OOP]
+---
 
 ## Inheritance
 
 This article will cover the function of Python inheritance, composition, and polymorphism.
 
 This is a great topic because it's where we start to not only discuss what is *logically necessary* for a program to run, but we also discuss many best practices that will make your code more legible and resilient. 
+
+<!--more-->
 
 With inheritance, there are many times where you have the choice to implement a best practice or not. This implementation is totally up to you - it's not like the code will fail to compile without them. However, there are many best practices with inheritance that ought to be adhered to if you'd like to avoid frustrating, complicated situations when making changes to your code. 
 
