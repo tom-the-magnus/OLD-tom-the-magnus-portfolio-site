@@ -1,6 +1,17 @@
+---
+layout: post
+title: "Python - Comprehensions"
+description: "Guide on python comprehensions"
+date: 2023-06-10
+feature_image: images/python-comprehensions.png
+tags: [python]
+---
+
 To better demonstrate composition using our car dealership scenario, let's revisit the previous code and tweak the structure. 
 
 Let's say we want to add the behavior of selling a car to our `Car` class. However, instead of subclassing each type of car, we can define a separate class, `SalesBehavior`, which will handle the sales-related operations.
+
+<!--more-->
 
 The `SalesBehavior` class could look something like this:
 
