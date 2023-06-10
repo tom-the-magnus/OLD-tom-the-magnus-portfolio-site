@@ -3,7 +3,7 @@ layout: post
 title: "Debugging 101: Exception handling, assertions, unit testing"
 description: "Learn how to detect errors and squash bugs in Python"
 date: 2023-05-08
-feature_image: images/python_bugs.jpg
+feature_image: images/python-bugs.jpg
 tags: [pythong, debugging]
 ---
 
