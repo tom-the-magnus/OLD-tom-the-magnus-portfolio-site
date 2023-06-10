@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Python: Inheritance"
+title: "Python OOP: Inheritance"
 description: "Article on inheritance"
 date: 2023-06-09
 feature_image: images/python-inheritance.png
 tags: [python, python OOP]
 ---
-
-## Inheritance
-
 This article will cover the function of Python inheritance, composition, and polymorphism.
 
 This is a great topic because it's where we start to not only discuss what is *logically necessary* for a program to run, but we also discuss many best practices that will make your code more legible and resilient. 
