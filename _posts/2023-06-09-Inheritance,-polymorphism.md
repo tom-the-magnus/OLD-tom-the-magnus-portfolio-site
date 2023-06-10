@@ -3,7 +3,7 @@ layout: post
 title: "Python: Inheritance"
 description: "Article on inheritance"
 date: 2023-06-09
-feature_image: images/python-symbol.png
+feature_image: images/python-inheritance.png
 tags: [python, python OOP]
 ---
 
