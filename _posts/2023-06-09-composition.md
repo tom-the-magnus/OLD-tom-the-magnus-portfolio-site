@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Python - Comprehensions"
+title: "Python OOP - Compositions"
 description: "Guide on python comprehensions"
 date: 2023-06-10
-feature_image: images/python-comprehensions.png
+feature_image: images/python-compositions.png
 tags: [python]
 ---
 
-To better demonstrate composition using our car dealership scenario, let's revisit the previous code and tweak the structure. 
+To better demonstrate composition using our car dealership scenario from [Python OOP - Inheritance]([url](http://tom-blog.xyz/Inheritance)), let's revisit the previous code and tweak the structure. 
 
 Let's say we want to add the behavior of selling a car to our `Car` class. However, instead of subclassing each type of car, we can define a separate class, `SalesBehavior`, which will handle the sales-related operations.
 
