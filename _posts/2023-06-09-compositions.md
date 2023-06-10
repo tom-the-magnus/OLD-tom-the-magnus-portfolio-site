@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python OOP - Compositions"
+title: "Python OOP: Compositions"
 description: "Guide on python comprehensions"
 date: 2023-06-10
 feature_image: images/python-composition.png
