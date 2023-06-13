@@ -7,15 +7,21 @@ feature_image: images/python-map.png
 tags: [python]
 ---
 
-In [Comprehensions Basics](https://tom-the-magnus.github.io/comprehensions), I mentioned that you could use these functions to perform the same operations that a list comprehension would. So what are these things anyway? Let's find out.
+## Overview
+
+`map()`, `filter()`, and `lambda` are three powerful built-in Python functions that can allow you to construct a new iterable ( a list, dictionary, set, etc ) based on an existing iterable. 
 
 <!--more-->
+
+Really, they accomplish the same general goal as comprehensions, but there are syntactic and logical differences. Let's find out what they are! 
 
 Let's start with `map()`.
 
 ## map()
 
-`map()` is really just a function for constructing an iterable based on an existing iteralbe, but there are some parts of its syntax that may be new to you, namely that you typically define a method outside the `map()` and then call it using `map()`. Here's a simple example:
+`map()` is really just a function for constructing an iterable based on an existing iterable, but there are some parts of its syntax that may be new to you. 
+
+The trickiest thing about the syntax for map is that you typically define a method outside the `map()` method and then call it using `map()`. Here's a simple example:
 
 ```
 def multiply_2(n):
@@ -47,6 +53,8 @@ So, all `map()` methods have these elements:
 The map function then returns an object that is another iterable sometimes called a **map object**. 
 
 Sometimes though, it can be more concise to have the `other_method` be on the same line as the `map()` function itself. This is what `lambda()` is for. 
+
+## lambda()
 
 `lambda()` allows you to define what's called an "anonymous function", which is really just a function that has no `def` . Really, `lambbda()` behaves just like `def`  does when we're typically writing methods, but we don't have to give the `lambda()` function a name and whatever `lambda()` function we write cannot be called outside of where we write it.
 
@@ -109,10 +117,10 @@ So really, `map()` is used if you want to construct a new iterable and keep ever
 
 ## Limits to map() and filter()
 
-Overall, `map()` and `filter()` are good to use if you need to construct a new iterator using a method that is not logically very complicated. 
+Overall, `map()` and `filter()` are good to use if you need to construct a new iterable using a method that is not logically very complicated. 
 
-However, there are cases where a good ol' `for` loop may be a better choice, particularly if you have a very complex series of steps that a iterator must be processed with.
+However, there are cases where a good ol' `for` loop may be a better choice, particularly if you have a very complex series of steps that a iterable must be processed with.
 
-Really, my final guidance would be this - **`map()` and `filter()` are probably the most compact and legible way to process some iterable.s If you need to construct a new iterator with a single method and/or condition, use them.**
+Really, my final guidance would be this - **`map()` and `filter()` are probably the most compact and legible way to process some iterable If you need to construct a new iterable with a single method and/or condition, use them.**
 
-That's all! Well done and hope you enjoyed reading! Check out these related articles to learn more:
+That's all! Well done and hope you enjoyed reading!
