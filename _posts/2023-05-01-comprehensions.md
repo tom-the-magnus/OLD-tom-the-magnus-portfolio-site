@@ -8,11 +8,11 @@ author: Tom
 tags: [python]
 ---
 
-Comprehensions are used to transform one list into another list using only a single line of code. So if you already have a list and want to produce a new list by performing some operation on every element of the existing list, you use a comprehension.
-
-<!--more-->
+Comprehensions are a highly legible, concise way to construct a new sequence using an existing sequence in combination with some method.  
 
 There are list comprehensions and dictionary comprehensions. We'll start with list comprehensions.
+
+<!--more-->
 
 ## List Comprehensions
 
@@ -60,7 +60,7 @@ squares = [num**2 for num in numbers]
 
 as:
 
->Squares is equal to each element to the power of two in the iterable called numbers
+	Squares is equal to each element to the power of two in the iterable called 'numbers'
 
 So the logic here is that each element in `numbers` gets squared and those numbers are added to `squares`. `1` in `numbers` stays `1`, `2` becomes `4`, and `3` becomes `9`.
 
@@ -93,7 +93,7 @@ First, you can use these built-in methods to generate a list of the values or ke
 ```
 dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 key_list = dict1.keys()
-val_list = dict1.val()
+val_list = dict1.values()
 ```
 
 Pretty simple - these just take all the keys or values and puts them into a list. The final product is:
@@ -156,4 +156,4 @@ So why use comprehensions, then? While these are all great methods to get the jo
 
 Well done, that's it! If you want to check out some related tutorials, I've linked them below. 
 
-- [map(), filter(), lambda](https://tom-blog.xyz/map(),-filter(),-lambda)
+[map(), filter(),lambda](https://tom-blog.xyz/map(),-filter(),-lambda)
