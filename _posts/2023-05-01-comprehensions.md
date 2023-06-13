@@ -24,12 +24,13 @@ The syntax for this is:
 
 So, all list comprehensions have these four elements:
 
-- a new list - `new_list` 
-- an expression  - `expression`
-- a for statement  - `for item`
-- an iterable  - `in iterable`
+- an existing iterable
+- an expression 
+- a for statement
 
-To see how this would be an implemented, here's an example:
+Many comprehensions are also assigned to a variable, although this is not totally necessary. In the above example, the iterable that this comprehension creates is a list by the name of 'new_list'.
+
+To see a more real life example of how this would be an implemented, here's an example:
 
 ```
 # Our iterable, a list of numbers
@@ -41,10 +42,9 @@ squares = [num**2 for num in numbers]
 
 In this example, the elements of our comprehension are:
 
-- a new list - `squares`
+- an existing iterable - `numbers`
 - an expression - `num**2`
 - a for statement - `for num`
-- a list to be iterated on - `in numbers`
 
 If we ran this code, `squares` would be equal to: 
 
@@ -60,9 +60,11 @@ squares = [num**2 for num in numbers]
 
 as:
 
-	Squares is equal to each element to the power of two in the iterable called 'numbers'
+> Squares is equal to each element to the power of two in the iterable called 'numbers'
 
 So the logic here is that each element in `numbers` gets squared and those numbers are added to `squares`. `1` in `numbers` stays `1`, `2` becomes `4`, and `3` becomes `9`.
+
+Feel free to copy and paste this code into your own IDE and scratch your head over this for a moment. Comprehensions confuse a lot of people when they first see them!
 
 ## Comprehension Conditionals
 
