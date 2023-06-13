@@ -4,7 +4,7 @@ title: "Debugging 101: Exception handling, assertions, unit testing"
 description: "Learn how to detect errors and squash bugs in Python"
 date: 2023-05-08
 feature_image: images/python-bugs.png
-tags: [pythong, debugging]
+tags: [python, debugging]
 ---
 
 When you're writing a program in Python, it's good to test each part of your program as you build it so that you can detect **errors** and **limitations** with your code early on.
@@ -26,7 +26,7 @@ SyntaxError: invalid syntax
 SyntaxError: EOL while scanning string literal
 ```
 
-The other type of error is an `exception`. An exception is basically a logical error in your code - you tried to divide by zero, concatenate a string with an integer, or call a variable that was not defined. These are things which make your program logically impossible, so Python cannot compile it.
+The other type of error is an `exception`. An exception is basically a logical error in your code - you tried to divide by zero, concatenate a string with an integer, or call a variable that was not defined. These are things which make your program logically impossible, so Python cannot compile it. 
 
 Some `exceptions` are pre-written in Python and go by specific names. For example, if you try to divide by zero, Python will not compile your code because of a `ZeroDivisionError`. If you try to add a string and a number together, your code will fail to compile because of a  `TypeError`. They may look something like:
 
@@ -132,7 +132,7 @@ class AbstractClass:
 		raise NotImplementedError("Subclass must implement this method")
 ```
 
-In this example the error is use to make sure a a method is implemented, but really we could just to make sure that a programmer is aware of how our classes and methods ought to be used and is prevented from using them improperly.
+In this example the error is use to make sure a a method is implemented, but really we could just to make sure that a programmer is aware of how our classes and functions ought to be used and is prevented from using them improperly.
 
 You can also **chain** exceptions, which can help with traceback:
 
@@ -247,8 +247,6 @@ As we discussed before, `assertRaises` is a useful method for testing whether a 
 
 Here is an example:
 
-pythonCopy code
-
 ```
 import unittest  
 
@@ -263,16 +261,15 @@ class DivTest(unittest.TestCase):
 if __name__ == '__main__':     
 	unittest.main()`
 ```
+
 In this example, the `with` statement creates a context where `self.assertRaises(ZeroDivisionError)` acts as a context manager. 
 
 If the code inside the `with` block (in this case `div(1, 0)`) raises a `ZeroDivisionError`, the test passes. If the code does not raise a `ZeroDivisionError`, or if it raises a different kind of exception, the test fails.
 
 ## Wrapping Up
 
-So far, we've seen how to use the `unittest` module in Python to write tests for our code. We've seen how to test for equality with `assertEquals`, and how to test for exceptions with `assertRaises`. There are many other methods available in the `unittest` module for more complex tests, but with just these two methods, you can already write a wide variety of useful tests for your Python code.
+So far, we've seen how to use the `unittest` module in Python to write tests for our code. We've seen how to test for equality with `assertEquals`, and how to test for exceptions with `assertRaises`. There are many other functions available in the `unittest` module for more complex tests, but with just these two methods, you can already write a wide variety of useful tests for your Python code.
 
 Remember, writing tests for your code can help you catch errors and unexpected behavior early, before your code ends up in a production environment. Even if it takes some time to write the tests, it's usually worth it for the time you save debugging and fixing problems later on.
 
-Now, you can start writing tests for your Python code using the `unittest` module. Happy testing! If you want to check out some related tutorials, I've linked them below. 
-
-- *Right now there are actually no related articles, but I'm working on it! *
+Now, you can start writing tests for your Python code using the `unittest` module. Happy testing! 
