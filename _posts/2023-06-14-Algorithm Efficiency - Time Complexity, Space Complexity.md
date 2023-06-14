@@ -11,6 +11,8 @@ tags: [python]
 
 When we're designing algorithms, it's important to make sure that we're designing algorithms that are efficient. There are two main ways an algorithm can be efficient - with the time it takes to run and the space in memory it uses up when running. 
 
+<!--more-->
+
 The time an algorithm takes to run is determined by 
 its **time complexity**. If an algorithm took a very long time to run, we could describe the algorithm as being "very space complex" or "having high space complexity". You could probably just also say it's inefficient or takes a long time to process, though.
 
