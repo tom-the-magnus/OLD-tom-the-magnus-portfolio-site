@@ -7,8 +7,6 @@ feature_image: images/python-time-complexity.png
 tags: [python]
 ---
 
-## Overview
-
 When we're designing algorithms, it's important to make sure that we're designing algorithms that are efficient. There are two main ways an algorithm can be efficient - with the time it takes to run and the space in memory it uses up when running. 
 
 <!--more-->
