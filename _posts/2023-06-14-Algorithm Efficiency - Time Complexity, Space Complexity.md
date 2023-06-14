@@ -2,8 +2,8 @@
 layout: post
 title: "Python: Time Complexity, Space Complexity"
 description: "Measuring space and time complexity in python"
-date: 2019-01-03
-feature_image: images/python-time-complexity
+date: 2023-06-14
+feature_image: images/python-time-complexity.png
 tags: [python]
 ---
 
