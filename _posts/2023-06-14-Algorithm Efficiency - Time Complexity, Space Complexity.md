@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Python: Time Complexity, Space Complexity"
+description: "Measuring space and time complexity in python"
+date: 2019-01-03
+feature_image: images/python-time-complexity
+tags: [python]
+---
+
 ## Overview
 
 When we're designing algorithms, it's important to make sure that we're designing algorithms that are efficient. There are two main ways an algorithm can be efficient - with the time it takes to run and the space in memory it uses up when running. 
